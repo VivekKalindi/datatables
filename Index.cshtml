@@ -1,0 +1,66 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+    <div class="text-center">
+        <h1>Employee Table</h1>
+        <br />
+
+        <table id="mytable" class="table table-bordered">
+
+            <thead>
+                <tr>
+                    <th> employee name</th>
+                    <th> salery</th>
+                    <th> status</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>shivam</td>
+                    <td>25000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>pritam</td>
+                    <td>2900</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>durgesh</td>
+                    <td>5000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>vikram</td>
+                    <td>20000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>akash</td>
+                    <td>50000</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>ravi</td>
+                    <td>250000</td>
+                    <td>Not Active</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    @section Scripts{
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+                $('#mytable').DataTable();
+            });
+        </script>
+
+    }
